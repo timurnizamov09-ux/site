@@ -24,7 +24,7 @@ CORS(app)
 GEMINI_AVAILABLE = False
 try:
     import google.generativeai as genai
-    GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY', '')
+    GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY', 'AIzaSyAUxzodA7_zKG4txoNu8EcLCyGd8S7xyGU')
     if GEMINI_API_KEY:
         genai.configure(api_key=GEMINI_API_KEY)
         GEMINI_MODEL = 'gemini-2.0-flash-exp'
